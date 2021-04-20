@@ -1,0 +1,196 @@
+.top {z-index: 2; position: relative}
+.bottom {z-index: 1; position: relative}
+.col{
+	float:left;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+}
+#removeImg,
+.ui-resizable-re{
+    background: url(../images/icon-remove.svg) no-repeat;
+    top: -35px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    width: 20px!important;
+    height: 20px!important;
+    background-size: 100%;
+    border: 0!important;
+    background-color: transparent!important;
+    cursor: pointer;
+}
+#removeImg{
+	display: none;
+	margin-top: -20px;
+}
+.drag{
+	width:100px;
+	height:150px;
+	position:relative;
+	background-size:contain !important;
+	background-repeat:no-repeat;
+	float:left;
+	margin-left:10px;
+	margin-top:30px;
+}
+.drag:hover{
+	opacity: 0.6;
+	filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#result .drag{
+	width:60px;
+	height:auto;
+	background-size:200px;
+	border:none;
+}
+#result .drag img{
+	width:100%;
+	height:100%;
+	z-index:0;
+}
+.drag2 {
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+	filter: FlipV;
+	-ms-filter: "FlipV";
+}
+.new-class{
+	width:60px;
+	height:80px;
+	background-size:200px;
+	border:solid 4px #666;
+}
+
+.ui-resizable-handle {
+	width: 10px;
+	height: 10px;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+}
+.ui-resizable-n{
+	top: -10px;
+	left:50%;
+	width: 6px;
+	height: 6px;
+}
+.ui-resizable-e{
+	right:-10px;
+	top:50%;
+	width: 6px;
+	height: 6px;
+}
+.ui-resizable-s{
+	bottom: -10px;
+	left: 50%;
+	width:6px;
+	height: 6px;
+}
+
+.ui-resizable-w{
+	left:-10px;
+	top:50%;
+	width: 6px;
+	height: 6px;
+}
+.ui-resizable-nw{
+	left: -10px;
+	top: -10px;
+	width: 6px;
+	height: 6px;
+}
+.ui-resizable-ne{
+	top: -10px;
+	right: -10px;
+	width: 6px;
+	height: 6px;
+}
+.ui-resizable-sw{
+	bottom: -10px;
+	left: -10px;
+	width: 6px;
+	height: 6px;
+}
+.ui-resizable-se{
+	bottom: -10px;
+	right: -10px;
+	width: 6px;
+	height: 6px;
+}
+.ui-resizable-helper {
+	border: 1px dotted #CCC;
+}
+.toolsTop{
+	background-color:#CCC;
+	opacity: 0.6;
+	filter: alpha(opacity=40);
+	width:70%;
+	height:50px;
+	float:right;
+	display:none;
+}
+#result{
+	position: relative;
+	overflow: hidden;
+}
+#imgUpload{
+     position: absolute;
+     top:25px;
+     height: 80px;
+     opacity: 0;
+}
+.section{
+     position: relative;
+     border: 2px dashed red;
+     border-radius: 5px;
+     padding: 15px;
+     text-align: center;
+}
+h3{
+     margin-bottom: 15px;
+     font-weight: bold;
+     font-size: 18px;
+}
+.boxUpload{
+     border: 1px solid #ccc;
+     padding: 30px;
+}
+#imgDesign{
+     position: relative;
+     z-index: 1;
+}
+.rect {
+    height: 100px;
+    width : 150px;
+    background : transparent;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 99;
+    display: none;
+}
+.clayfy-handler{
+     z-index: 9999;
+}
+.listimg li{
+	list-style: none;
+	cursor: pointer;
+}
+.listimg li.active{
+	border:1px solid #CCC;
+}
+#font p, #fontFamily p{
+	margin-top: 15px;
+}
+#myTxt{
+    position: absolute;
+    left: 0;
+    top: 58%;
+    right: 0;
+    text-align: center;
+    z-index: 99;
+    width: 150px;
+    cursor: move;
+}
